@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     personnes p;
-    cout<<"bonjour";
+    
     p.set_personne();
 
     return 0;
