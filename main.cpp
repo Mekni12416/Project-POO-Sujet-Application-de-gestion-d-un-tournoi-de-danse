@@ -6,6 +6,8 @@ using namespace std;
 #include"danseur.cpp"
 #include"danseur_amateur.h"
 #include"danseur_amateur.cpp"
+#include "danseur_pro.h"
+#include "danseur_pro.cpp"
 #include <string>
 int main()
 {
@@ -17,9 +19,12 @@ int main()
     /*danseur d;
     d.enregistrer_danseur();
     d.get_danseur();*/
-    danseur_amateur a;
+    /*danseur_amateur a;
     a.enregistrer_danseur_amateur();
-    a.afficher_danseur_amateur();
+    a.afficher_danseur_amateur();*/
+    danseur_pro b;
+    b.enregistrer_danseur_pro();
+    b.afficher_danseur_pro();
     
 
     return 0;
