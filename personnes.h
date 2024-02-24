@@ -19,6 +19,7 @@ public:
    personnes(int,string,string,string,string);
    void set_personne();
    void get_personne();
+   void modifier_personne();
   
 
 };
