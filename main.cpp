@@ -22,10 +22,13 @@ int main()
     /*danseur_amateur a;
     a.enregistrer_danseur_amateur();
     a.afficher_danseur_amateur();*/
+    
     danseur_pro b;
     b.enregistrer_danseur_pro();
-    b.afficher_danseur_pro();
-    
+    b.afficher_danseur_pro(); 
+    cout<<"Bonjour";
+     
 
     return 0;
+
 }
