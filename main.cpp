@@ -29,4 +29,13 @@ int main()
     o.afficher_tournoi();
 
         return 0;
+    
+    danseur_pro b;
+    b.enregistrer_danseur_pro();
+    b.afficher_danseur_pro(); 
+    cout<<"Bonjour";
+     
+
+    return 0;
+
 }
