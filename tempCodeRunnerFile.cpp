@@ -1,1 +1,0 @@
-    this->niveau_entrenement = niveau_entrenement;
