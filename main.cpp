@@ -4,7 +4,8 @@ using namespace std;
 #include "danseur.cpp"
 #include "danseur_amateur.cpp"
 #include "danseur_pro.cpp"
-#include"organisateur.cpp"
+#include "organisateur.cpp"
+#include "spectateur.cpp"
 #include <string>
 int main()
 {
@@ -22,20 +23,16 @@ int main()
     /*danseur_pro b;
     b.enregistrer_danseur_pro();
     b.afficher_danseur_pro();*/
-    organisateur o;
-    //o.set_organisateur();
-    //o.get_organisateur();
-    o.creer_tournoi();
-    o.afficher_tournoi();
-
-        return 0;
-    
-    danseur_pro b;
-    b.enregistrer_danseur_pro();
-    b.afficher_danseur_pro(); 
-    cout<<"Bonjour";
-     
+    // organisateur o;
+    // o.set_organisateur();
+    // o.get_organisateur();
+    // o.creer_tournoi();
+    // o.afficher_tournoi();
+    spectateur s1, s2;
+    s1.acheter_tiquet();
+    s1.get_spectateur();
+    s2.acheter_tiquet();
+    s2.get_spectateur();
 
     return 0;
-
 }
