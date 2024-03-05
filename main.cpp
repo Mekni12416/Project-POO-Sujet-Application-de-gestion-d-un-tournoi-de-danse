@@ -8,6 +8,7 @@ using namespace std;
 #include"danseur_amateur.cpp"
 #include "danseur_pro.h"
 #include "danseur_pro.cpp"
+#include "critere.h"
 #include <string>
 int main()
 {
@@ -21,12 +22,14 @@ int main()
     d.get_danseur();*/
     /*danseur_amateur a;
     a.enregistrer_danseur_amateur();
-    a.afficher_danseur_amateur();*/
+    a.afficher_danseur_amateur();
     
     danseur_pro b;
     b.enregistrer_danseur_pro();
-    b.afficher_danseur_pro(); 
+    b.afficher_danseur_pro(); */
     cout<<"Bonjour";
+    Critere c("12kg","forte");
+    c.afficher();
      
 
     return 0;
