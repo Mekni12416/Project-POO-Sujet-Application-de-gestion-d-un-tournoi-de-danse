@@ -1,4 +1,5 @@
 #include <string>
+#include<ios>
 using namespace std;
 class Critere
 {
@@ -9,7 +10,9 @@ private:
 public:
     Critere(string=" ", string=" ");
     Critere(const Critere&);
-    void saisirScore();
+    void saisirCritere();
+    friend ostream& operator<<(ostream&, Critere&);
+    friend istream& operator>>(istream&, Critere&);
     void afficher();
 /*
     ~Critere(){} */
