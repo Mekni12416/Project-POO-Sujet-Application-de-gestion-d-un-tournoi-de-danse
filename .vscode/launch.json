@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/DELL/Desktop/ProjetC++2024/Project-POO-Sujet-Application-de-gestion-d-un-tournoi-de-danse",
-      "program": "c:/Users/DELL/Desktop/ProjetC++2024/Project-POO-Sujet-Application-de-gestion-d-un-tournoi-de-danse/build/Debug/outDebug",
+      "cwd": "c:/Users/mekni/Documents/GitHub/Project-POO",
+      "program": "c:/Users/mekni/Documents/GitHub/Project-POO/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

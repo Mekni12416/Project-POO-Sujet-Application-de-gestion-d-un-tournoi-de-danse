@@ -3,6 +3,8 @@ using namespace std;
 #include "spectateur.h"
 #include <string>
 #include <ctime>
+#include <random>
+
 //constructeur par deffaut pour spectateur
 spectateur::spectateur(){
     personnes();

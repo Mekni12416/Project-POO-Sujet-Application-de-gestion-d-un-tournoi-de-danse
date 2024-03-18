@@ -14,7 +14,7 @@ danseur::danseur(int cin_p, string nom, string prenom, string nationalite, strin
     personnes(cin_p, nom, prenom, nationalite, date_naissance); 
     this->style_danse = style_danse;
 }
-// methode pour enregistrer danseur
+// methode pour enregistrer danseur        
 void danseur::enregistrer_danseur()
 {
     cout << "*******enregistration des danseurs*********" << endl;
@@ -27,6 +27,13 @@ void danseur::get_danseur()
 {
     personnes::get_personne();
     cout << "le style de danse est :" << style_danse << endl;
+}
+ostream& operator<<(ostream& out,danseur& d){
+   
+    out<<"le style de danse est :"<<d.style_danse<<endl;
+    return out;
+
+
 }
 
 

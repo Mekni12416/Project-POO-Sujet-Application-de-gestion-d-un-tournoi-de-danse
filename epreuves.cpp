@@ -27,9 +27,9 @@ void Epreuves::afficher_epreuves()
  }
  istream& operator>>(istream& in, Epreuves& e)
  {
-    cout<<"Donner le numero d epreuves:"
+    cout<<"Donner le numero d epreuves:";
     in>>e.num_epreuves;
-    cout<<"Donner l heure d epreuves:"
+    cout<<"Donner l heure d epreuves:";
     in>>e.heure_epreuves;
     return in;
  }

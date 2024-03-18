@@ -92,3 +92,25 @@ void personnes::modifier_personne()
         date_naissance = modification;
     }
 }
+ostream& operator<<(ostream& out, personnes& p){
+    out<<"le cin est : "<<p.cin_p<<endl;
+    out<<"le nom est : "<<p.nom<<endl;
+    out<<"le prenom est : "<<p.prenom<<endl;
+    out<<"la nationalite est : "<<p.nationalite<<endl;
+    out<<"le date naissance est : "<<p.date_naissance<<endl;
+    return out;
+
+}
+istream& operator>>(istream& in, personnes& p){
+    cout << "donner le cin " << endl;
+    in >> p.cin_p;
+    cout << "donner le nom " << endl;
+    in >> p.nom;
+    cout << "donner le prenom " << endl;
+    in >> p.prenom;
+    cout << "donner le nationalite " << endl;
+    in >> p.nationalite;
+    cout << "donner date naissance " << endl;
+    in >> p.date_naissance;
+    return in;
+}

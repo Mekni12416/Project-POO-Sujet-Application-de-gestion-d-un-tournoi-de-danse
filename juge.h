@@ -12,7 +12,8 @@ public:
   juge(int, string, string, string, string, string);
   void afficher_juge();
   void calcul_note();
-  void attribuer_score();
+  void attribuer_score(danseur& , float);
+  float obtenir_score(danseur&);
 
 };
 #endif

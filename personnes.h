@@ -2,6 +2,7 @@
 #define personnes_h
 using namespace std;
 #include <string>
+#include<ios>
 //#include"date.h"
 //#include<vector>
 class personnes
@@ -20,7 +21,9 @@ public:
    void set_personne();
    void get_personne();
    void modifier_personne();
-  
+   friend ostream& operator<<(ostream& , personnes&);
+
+
 
 };
 
