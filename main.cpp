@@ -4,53 +4,68 @@ using namespace std;
 #include "danseur.cpp"
 #include "danseur_amateur.cpp"
 #include "danseur_pro.cpp"
-#include "critere.h"
 #include "organisateur.cpp"
 #include "spectateur.cpp"
 #include <string>
+#include <vector>
 int main()
 {
-    /* personnes p;
-    p.set_personne();
-    p.get_personne();
-    p.modifier_personne();
-    p.get_personne();*/
-    /*danseur d;
-    d.enregistrer_danseur();
-    d.get_danseur();*/
-    /*danseur_amateur a;
-    a.enregistrer_danseur_amateur();
+    int ch;
+    cout << "&&&&&&&&& MENU PRINCIPALE DE L'APPLICATION &&&&&&&&&" << endl;
+    cout << "choisisez parmi les propositions suivantes" << endl;
+    cout << endl;
+    cout << "1-enregistrer les danseurs" << endl;
+    cout << "2-afficher information" << endl;
+    cout << "3-creation d'un tournoi" << endl;
+    cout << "4-affichage de tournoi" << endl;
+    cout << "5-score" << endl;
+    cout << "6-spectateur" << endl;
+    cout << endl;
+    cout << "donner le choix" << endl;
+    cin >> ch;
+    if (ch == 1)
+    {
+        cout << "///////////MENU DE L ENREGISTREMENT DES DANSEURS///////////" << endl;
+        cout << "*************pour saisir les danseurs faire***********" << endl;
+        char choix;
+        int rep;
+        do
+        {
+            cout << "choisir si le danseur est amateur tapez(A) ou bien pro tapez(P)" << endl;
 
-    a.afficher_danseur_amateur();
+            cout << "donner le choix" << endl;
+            cin >> choix;
+            danseur_amateur a;
+            danseur_pro p;
+            if (choix == 'A' || choix == 'a')
+            {
+                int n;
+                cout << "combien de danseur amateur voulez vous enregistrer " << endl;
+                cin >> n;
+                for (int i = 0; i < n; i++)
+                {
+                    cout << "saisir le danseur num " << i + 1 << endl;
+                    a.enregistrer_danseur_amateur();
+                }
+            }
+            else if (choix == 'P' || choix == 'p')
+            {
+                int n;
+                cout << "combien de danseur pro voulez vous enregistrer " << endl;
+                cin >> n;
+                for (int i = 0; i < n; i++)
+                {
+                    cout << "saisir le danseur num " << i + 1 << endl;
+                    p.enregistrer_danseur_pro();
+                }
+            }
+            else
+                cout << "choix invalide" << endl;
 
-    danseur_pro b;
-    b.enregistrer_danseur_pro();
-    b.afficher_danseur_pro();
-    cout<<"Bonjour";
-    Critere c("12kg","forte");
-    c.afficher();
-
-
-    a.afficher_danseur_amateur();*/
-    /*danseur_pro b;
-    b.enregistrer_danseur_pro();
-    b.afficher_danseur_pro();*/
-    // organisateur o;
-    // o.set_organisateur();
-    // o.get_organisateur();
-    // o.creer_tournoi();
-    // o.afficher_tournoi();
-    /*spectateur s1, s2;
-    s1.acheter_tiquet();
-    s1.get_spectateur();
-    s2.acheter_tiquet();
-    s2.get_spectateur();*/
-    /*personnes p;
-    cin>>p;
-    cout<<p;*/
-    danseur d;
-    d.enregistrer_danseur();
-    cout << d;
+            cout << "voulez vous continuer si oui tapez 1 sinon tapez 0" << endl;
+            cin >> rep;
+        } while (rep == 1);
+    }
 
     return 0;
 }
